@@ -595,9 +595,7 @@ var QRCode;
 	 * @private
 	 */
 	QRCode.prototype.makeImage = function () {
-		if (typeof this._oDrawing.makeImage == "function" && (!this._android || this._android >= 3)) {
-			this._oDrawing.makeImage();
-		}
+		this._oDrawing.makeImage();
 	};
 	
 	/**
